@@ -226,11 +226,11 @@ sup {
 
 .button {
   box-sizing: border-box;
-	width: 80px;
+  width: 80px;
   text-align: center;
-	text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 15px;
-	border-radius: 5px;
+  border-radius: 5px;
   margin: 40px auto;
   background-color: #00B89F;
   color: white;
@@ -267,8 +267,8 @@ input[type="submit"] {
   top: 260px;
   left: -20px;
   position: absolute;
-	background-color: #00B89F;
-	color:white;
+  background-color: #00B89F;
+  color: white;
 }
 
 input {
@@ -278,14 +278,14 @@ input {
   padding: 5px;
   margin: 10px auto;
   font-size: 30px;
-	border: 1px solid #00B89F;
+  border: 1px solid #00B89F;
 }
 
 textarea {
   height: 160px;
   width: 565px;
   font-size: 30px;
-	border: 1px solid #00B89F;
+  border: 1px solid #00B89F;
 }
 
 
@@ -293,5 +293,27 @@ textarea {
 
 .foot {
   height: 100px;
-  background-color: red;
+	position: relative;
+	color: grey;
+}
+.copyright{
+	position: absolute;
+	display: inline-block;
+	top:20px;
+}
+.images_bottom {
+  width: 200px;
+  height: 100px;
+	background-repeat: no-repeat;
+	position: absolute;
+	display: inline-block;
+	left: 650px;
+}
+.logo_bottom{
+	display: inline-block;
+	position: absolute;
+	left: 900px;
+	top:20px;
+	font-size: 18px;
+	text-transform: uppercase;
 }
