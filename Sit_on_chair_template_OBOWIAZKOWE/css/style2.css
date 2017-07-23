@@ -33,13 +33,33 @@
 nav {
   height: 34px;
   background-color: black;
+  border: 1px solid black;
 }
 
-li {
+ul {
+  margin-right: 40px;
+}
+
+li, p1 {
   color: white;
   padding: 10px;
+  margin: 0 15px;
   float: right;
   list-style-type: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p1 {
+  float: left;
+  margin-left: 40px;
+
+}
+
+span {
+  color: #00B89F;
+  font-weight: bold;
 }
 
 
@@ -58,29 +78,78 @@ li {
 /*chair*/
 
 #chair {
+  border: 1px solid black;
   height: 295px;
-  width: 400px;
+  width: 500px;
   background-image: url('../images/black_chair.png');
   background-repeat: no-repeat;
   position: absolute;
+  margin-left: 30px;
   top: 85px;
 }
 
 #top_text {
-  width: 400px;
+  border: 1px solid black;
+  width: 390px;
   height: 295px;
   text-align: center;
   position: relative;
-  top: 150px;
-  left: 500px;
+  left: 450px;
+}
+
+.arrow {
+  font-size: 70px;
+  height: 400px;
+  width: 30px;
+  box-sizing: border-box;
+  color: rgb(40, 199, 171);
+  position: relative;
+}
+
+p2 {
+  left: 50px;
+  top: 170px;
+}
+
+p5 {
+  left: 950px;
+  bottom: 207px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  top: 20px;
+}
+
+p3 {
+  position: relative;
+  font-size: 13px;
+  text-align: center;
+  top: 40px;
+}
+
+p4 {
+  padding-top: 10px;
+  height: 30px;
+  width: 220px;
+  background-color: rgb(40, 199, 171);
+  position: absolute;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  right: 90px;
+  bottom: 70px;
 }
 
 
 /*Offer*/
 
 .offer {
-  height: 295px;
-  background-color: white;
+  height: 300px;
   position: relative;
 }
 
@@ -110,11 +179,11 @@ li {
 #right {
   height: 220px;
   width: 300px;
-  border: 2px solid grey;
+  border: 1px solid grey;
   left: 665px;
   box-sizing: border-box;
-  font-size: 14px;
-  padding-top: 10px;
+  font-size: 13px;
+  padding: 20px;
 }
 
 h3 {
@@ -132,7 +201,7 @@ h3 {
 
 .underscore {
   width: 140px;
-  border-bottom: 4px solid #00B89F;
+  border-bottom: 4px solid rgb(40, 199, 171);
   font-size: 14px;
   font-family: 'Raleway';
   font-weight: bold;
@@ -145,39 +214,61 @@ h3 {
 /*price_list*/
 
 .price_list {
+  width: 1000;
   height: 603px;
-  margin: 0 auto;
-  background-color: rgba(230, 230, 255, 0.4);
-  padding: 0 50px 0 50px;
+  background-color: rgb(241, 241, 241);
+  padding: 50px 0px 0px 50px;
+}
+
+.underscore_longer {
+  width: 285px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid rgb(40, 199, 171);
+  text-transform: uppercase;
 }
 
 .container3 {
   width: 275px;
   height: 425px;
-  border: 3px solid black;
+  border: 2px solid rgb(194, 194, 194);
   margin: 50px 10px;
   display: inline-block;
-  background-color: white;
+  background-color: rgb(250, 250, 250);
 }
 
 .price_circle {
   width: 115px;
   height: 115px;
   border-radius: 100%;
-  border: 2px solid grey;
+  border: 2px solid rgb(194, 194, 194);
   box-sizing: border-box;
   position: relative;
   left: 80px;
 }
 
-.price {
+.price, .currency {
   font-weight: bold;
-  color: grey;
+  color: rgb(194, 194, 194);
   box-sizing: border-box;
-  font-size: 35px;
+}
+
+.price {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  font-size: 40px;
   position: absolute;
-  left: 30px;
-  top: 30px;
+  left: 20px;
+  top: 18px;
+}
+
+.currency {
+  font-size: 13px;
+  position: relative;
+  top: 70px;
+  left: 25px;
+  text-transform: uppercase;
 }
 
 sup {
@@ -189,7 +280,7 @@ sup {
   height: 50px;
   border-radius: 100%;
   background-color: white;
-  border: 3px solid black;
+  border: 2px solid rgb(194, 194, 194);
   margin: -30px auto;
   vertical-align: middle;
 }
@@ -198,19 +289,20 @@ sup {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  background-color: black;
+  background-color: rgb(194, 194, 194);
   margin: 0 auto;
   vertical-align: middle;
   margin-top: 12.5px;
   margin-bottom: -12.5px;
 }
 
-.nagłówek {
+.head {
   text-align: center;
   font-size: 20px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 20px;
+  color: rgb(40, 199, 171);
 }
 
 .main_text {
@@ -218,102 +310,173 @@ sup {
   text-align: center;
   font-size: 15px;
   margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 150px;
+  padding-top: 30px;
+  color: grey;
+}
+
+.first_style, .second_style {
+  background-color: rgb(228, 228, 228);
+  height: 30px;
+  width: 275px;
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.second_style {
+  background-color: rgb(241, 241, 241);
 }
 
 .button {
   box-sizing: border-box;
-  width: 80px;
+  width: 110px;
   text-align: center;
   text-transform: uppercase;
   font-size: 15px;
   border-radius: 5px;
-  margin: 40px auto;
-  background-color: #00B89F;
+  margin: 45px auto;
+  padding: 5px;
+  background-color: rgb(40, 199, 171);
   color: white;
 }
+
+
+
 
 
 /*Form*/
 
 .box1_form {
   width: 580px;
-  height: 445px;
+  height: 460px;
   box-sizing: border-box;
   display: inline-block;
-  position: relative;
+  position: absolute;
   font-size: 30px;
+  padding-top: 25px;
 }
 
 .box2 {
-  background-image: url('../images/red_chair.png');
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 445px;
+  width: 460px;
+  height: 460px;
   display: inline-block;
   position: relative;
-  left: 100px;
-  top: 90px;
+  left: 580px;
+}
+
+#red_chair {
+  position: relative;
+  left: 80px;
+  top: 30px;
+}
+
+#form_ok {
+  position: absolute;
+  border: 1px solid rgba(40, 199, 171, 0.5);
+  top: 270px;
+  left: 70px;
+}
+
+#approve {
+  position: relative;
+  top: 60px;
+  left: 130px;
+  font-size: 18px;
+  color: rgb(194, 194, 194);
+}
+
+#button2 {
+  position: relative;
+  bottom: 400px;
+  left: 680px;
 }
 
 input[type="submit"] {
-  height: 50px;
+  height: 60px;
   width: 290px;
   border-radius: 5px;
   text-transform: uppercase;
   top: 260px;
   left: -20px;
   position: absolute;
-  background-color: #00B89F;
+  background-color: rgb(40, 199, 171);
   color: white;
 }
 
 input {
   display: block;
   width: 565px;
-  height: 55px;
+  height: 45px;
   padding: 5px;
-  margin: 10px auto;
+  margin: 20px auto;
   font-size: 30px;
-  border: 1px solid #00B89F;
+  border: 1px solid rgb(40, 199, 171);
 }
 
 textarea {
   height: 160px;
   width: 565px;
   font-size: 30px;
-  border: 1px solid #00B89F;
+  border: 1px solid rgb(40, 199, 171);
 }
+
+::-webkit-input-placeholder {
+  color: rgb(194, 194, 194);
+}
+
+::-moz-placeholder {
+  color: rgb(194, 194, 194);
+}
+
+
+/* firefox 19+ */
+
+:-ms-input-placeholder {
+  color: rgb(194, 194, 194);
+}
+
+
+/* ie */
 
 
 /*Footer*/
 
 .foot {
-  height: 100px;
-	position: relative;
-	color: grey;
+
+  height: 80px;
+  position: relative;
+  color: grey;
+  top: 15px;
 }
-.copyright{
-	position: absolute;
-	display: inline-block;
-	top:20px;
+
+.copyright {
+
+  position: absolute;
+  display: inline-block;
+  top: 20px;
 }
+
 .images_bottom {
+
   width: 200px;
-  height: 100px;
-	background-repeat: no-repeat;
-	position: absolute;
-	display: inline-block;
-	left: 650px;
+  height: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  left: 650px;
 }
-.logo_bottom{
-	display: inline-block;
-	position: absolute;
-	left: 900px;
-	top:20px;
-	font-size: 18px;
-	text-transform: uppercase;
+
+.logo_bottom {
+
+  display: inline-block;
+  position: absolute;
+  left: 850px;
+  top: 20px;
+  font-size: 18px;
+  color: grey;
+  text-transform: uppercase;
+}
+
+span2 {
+  font-weight: bold;
 }
