@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sass - Zadania</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"> Sit <span>on </span> chair</div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">O firmie</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Aktualności</a>
+              </li>
+              <li>
+                <a href="#">Nasz Team</a>
+              </li>
+              <li>
+                <a href="#">Historia</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Galeria</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="first_section">
+    <div class="container">
+      <button class="arrow" id="prevArrow">&lt;</button>
+      <div class="slider" id="first_slide">
+        <img src="images/black_chair.png">
+        <div class="text">
+          <h1> Sit <span>on </span>our <span>chair</span></h1>
+          <p> Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
+          <br>
+          <button class="seeMore">Zobacz więcej</button>
+        </div>
+      </div>
+      <div class="slider" id="second_slide">
+        <img src="images/orange.png">
+        <div class="text">
+          <h1> Sit <span>on </span>our <span>chair</span></h1>
+          <p> Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
+
+          <button class="seeMore">Zobacz więcej</button>
+        </div>
+
+      </div>
+      <button class="arrow" id="nextArrow">&gt;</button>
+    </div>
+  </section>
+
+  <section class="second_section">
+    <div class="container">
+      <div class="image" id="left">
+        <div class="stripe">
+          <p class="underscore">Chair CLAIR</p>
+        </div>
+      </div>
+      <div class="image" id="center">
+        <div class="stripe">
+          <p class="underscore">Chair MARGARITA</p>
+        </div>
+      </div>
+      <div class="image" id="right">
+        <h3>Find all inputs</h3>
+        <br>
+        <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
+          <br>
+          <br> Notice there is no change when clicking the checkboxes since no click events have been
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="price_list">
+
+    <div class="container">
+      <div class="underscore_longer">Cennik</div>
+      <div class="box_offer">
+        <div class="container3">
+          <div class="circles">
+            <div class="outer-circle">
+              <div class="inner-circle">
+              </div>
+            </div>
+          </div>
+          <div class="head">
+            BASIC PLAN
+          </div>
+          <div class="price_circle">
+            <p class="price">85<sup>99</sup></p>
+            <p class="currency">pln/msc</p>
+
+          </div>
+          <div class="main_text">
+            <p class="first_style">Zakup towaru + dowóz</p>
+            <p class="second_style">Serwis</p>
+          </div>
+
+          <div class="button">
+            dołącz
+          </div>
+        </div>
+
+        <div class="container3" id="container2">
+          <div class="circles">
+            <div class="outer-circle" id="out_circle">
+              <div class="inner-circle" id="in_circle">
+              </div>
+            </div>
+          </div>
+          <div class="head" id="other_style">
+            STANDARD PLAN
+          </div>
+          <div class="price_circle" id="price_circle">
+            <p class="price">95<sup>99</sup></p>
+            <p class="currency">pln/msc</p>
+          </div>
+          <div class="main_text">
+            <p class="first_style first_other">Zakup towaru + dowóz</p>
+            <p class="second_style">Serwis</p>
+            <p class="first_style first_other">Gwarancja 5 lat</p>
+          </div>
+
+          <div class="button" id="other_button">
+            Dołącz
+          </div>
+        </div>
+
+        <div class="container3">
+          <div class="circles">
+            <div class="outer-circle">
+              <div class="inner-circle">
+              </div>
+            </div>
+          </div>
+          <div class="head">
+            ADVANCED PLAN
+          </div>
+          <div class="price_circle">
+            <p class="price">211<sup>00</sup></p>
+            <p class="currency">pln/msc</p>
+          </div>
+          <div class="main_text">
+            <p class="first_style">Zakup towaru + dowóz</p>
+            <p class="second_style">Serwis</p>
+            <p class="first_style">Gwarancja 6 lat</p>
+            <p class="second_style">Porady projektanta</p>
+          </div>
+          <div class="button">
+            Dołącz
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form_section">
+    <div class="container">
+      <div class="box1_form">
+        <div class="underscore_longer">Kontakt</div>
+        <form class="form">
+          <input type="text" placeholder="Imię">
+          <input type="email" placeholder="Email">
+          <textarea type="textarea" placeholder="Wiadomość" rows="6"></textarea>
+
+        </form>
+      </div>
+
+      <div class="box2_approve">
+        <div>
+          <img src="images/red_chair.png">
+        </div>
+        <div id="form_ok"><img src="images/form_ok.jpg">
+          <p id="approve">Zgadzam się na przetwarzanie <br> danych osobowych</p>
+        </div>
+        <form>
+          <input type="submit" value="Wyślij">
+        </form>
+      </div>
+  </section>
+
+  <footer class="foot">
+    <div class="container">
+        <p class="copyright">Copyright 2014| All Rights reservd. - Sit On Chair</p>
+
+        <div class="right_side">
+          <p class="images_bottom">
+          <img src="images/flickr.png">
+          <img src="images/vimeo.png">
+          <img src="images/pinterest.png">
+          <img src="images/twitter.png">
+        </p>
+        <p class="logo_bottom">Sit
+          <span2>on</span2> chair</p>
+        </div>
+
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
