@@ -84,9 +84,10 @@ header ul>li {
        */
 
 header ul>li:hover .dropdown-menu {
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex;*/
+  display: none;
 }
 
 header ul>li a {
@@ -211,9 +212,16 @@ Buttons slider
   margin-top: 1%;
 }
 
+
+#first_slide{
+  display: flex;
+}
+
 #second_slide {
   display: none;
 }
+
+
 
 
 /*
